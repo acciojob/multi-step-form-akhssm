@@ -11,25 +11,24 @@ const App = () => {
     model: "",
     car_price: "",
     card_info: "",
-    expiry_date: "",
+    expiry_date: ""
   });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.id]: e.target.value });
-  };
 
   const nextStep = () => setStep(step + 1);
   const prevStep = () => setStep(step - 1);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Final Submitted Data:", formData);
-    alert("Form submitted! Check console for data.");
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData({ ...formData, [id]: value });
+  };
+
+  const handleSubmit = () => {
+    console.log("Final Form Data:", formData);
   };
 
   return (
-    <div className="main-container">
-      {/* Do not remove main div */}
+    <div>
+      {/* Do not remove the main div */}
       <Step
         step={step}
         formData={formData}
