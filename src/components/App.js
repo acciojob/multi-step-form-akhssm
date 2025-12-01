@@ -27,16 +27,19 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="main-container">
       {/* Do not remove the main div */}
-      <Step
-        step={step}
-        formData={formData}
-        handleChange={handleChange}
-        nextStep={nextStep}
-        prevStep={prevStep}
-        handleSubmit={handleSubmit}
-      />
+
+      <div className="form-card">
+        <Step
+          step={step}
+          formData={formData}
+          handleChange={handleChange}
+          nextStep={nextStep}
+          prevStep={prevStep}
+          handleSubmit={handleSubmit}
+        />
+      </div>
     </div>
   );
 };

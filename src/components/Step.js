@@ -22,7 +22,9 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
             onChange={handleChange}
           />
 
-          <button onClick={nextStep}>Next</button>
+          <div className="button-group">
+            <button className="nav-btn" onClick={nextStep}>Next</button>
+          </div>
         </div>
       )}
 
@@ -44,8 +46,10 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
             onChange={handleChange}
           />
 
-          <button onClick={prevStep}>Previous</button>
-          <button onClick={nextStep}>Next</button>
+          <div className="button-group">
+            <button className="nav-btn" onClick={prevStep}>Previous</button>
+            <button className="nav-btn" onClick={nextStep}>Next</button>
+          </div>
         </div>
       )}
 
@@ -67,10 +71,13 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
             onChange={handleChange}
           />
 
-          <button onClick={prevStep}>Previous</button>
-          <button onClick={handleSubmit}>Submit</button>
+          <div className="button-group">
+            <button className="nav-btn" onClick={prevStep}>Previous</button>
+            <button className="submit-btn" onClick={handleSubmit}>Submit</button>
+          </div>
         </div>
       )}
+
     </div>
   );
 };
