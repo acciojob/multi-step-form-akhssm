@@ -2,7 +2,7 @@ import React from "react";
 
 const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }) => {
   return (
-    <div>
+    <>
       {step === 1 && (
         <div id="step1">
           <h2>Customer Details</h2>
@@ -10,7 +10,6 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
           <label>First Name:</label>
           <input
             id="first_name"
-            placeholder="First Name"
             value={formData.first_name}
             onChange={handleChange}
           />
@@ -18,7 +17,6 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
           <label>Last Name:</label>
           <input
             id="last_name"
-            placeholder="Last Name"
             value={formData.last_name}
             onChange={handleChange}
           />
@@ -36,7 +34,6 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
           <label>Car Model:</label>
           <input
             id="model"
-            placeholder="Car Model"
             value={formData.model}
             onChange={handleChange}
           />
@@ -44,7 +41,6 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
           <label>Car Price:</label>
           <input
             id="car_price"
-            placeholder="Car Price"
             value={formData.car_price}
             onChange={handleChange}
           />
@@ -63,7 +59,6 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
           <label>Card Info:</label>
           <input
             id="card_info"
-            placeholder="Card Info"
             value={formData.card_info}
             onChange={handleChange}
           />
@@ -71,7 +66,6 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
           <label>Expiry Date:</label>
           <input
             id="expiry_date"
-            placeholder="Expiry Date"
             value={formData.expiry_date}
             onChange={handleChange}
           />
@@ -82,7 +76,7 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 
