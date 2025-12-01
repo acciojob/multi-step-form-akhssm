@@ -1,6 +1,6 @@
 .main-container {
   width: 100%;
-  min-height: 100vh;  
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,48 +8,54 @@
 }
 
 .form-card {
-  width: 300px;
+  width: 320px;
   background: #cde8ff;
   padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+  border-radius: 20px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.15);
 }
 
 .form-card h2 {
-  margin-bottom: 15px;
   text-align: center;
+  margin-bottom: 20px;
+  color: #004b6b;
 }
 
 .form-card label {
   font-weight: bold;
   display: block;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .form-card input {
   width: 100%;
-  padding: 8px;
-  border-radius: 6px;
+  padding: 10px;
+  border-radius: 8px;
   border: 1px solid #888;
   margin-top: 5px;
+  background: white;
 }
 
 .button-group {
-  margin-top: 20px;
+  margin-top: 22px;
   display: flex;
   justify-content: space-between;
 }
 
-.nav-btn,
-.submit-btn {
+.nav-btn {
   padding: 8px 15px;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   background: #82d4ff;
   font-weight: bold;
 }
 
 .submit-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
   background: lightgreen;
 }

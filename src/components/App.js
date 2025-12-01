@@ -29,7 +29,6 @@ const App = () => {
   return (
     <div className="main-container">
       {/* Do not remove the main div */}
-
       <div className="form-card">
         <Step
           step={step}

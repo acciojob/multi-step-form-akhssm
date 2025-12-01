@@ -3,11 +3,11 @@ import React from "react";
 const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }) => {
   return (
     <div>
-
       {step === 1 && (
         <div id="step1">
           <h2>Customer Details</h2>
 
+          <label>First Name:</label>
           <input
             id="first_name"
             placeholder="First Name"
@@ -15,6 +15,7 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
             onChange={handleChange}
           />
 
+          <label>Last Name:</label>
           <input
             id="last_name"
             placeholder="Last Name"
@@ -32,6 +33,7 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
         <div id="step2">
           <h2>Car Details</h2>
 
+          <label>Car Model:</label>
           <input
             id="model"
             placeholder="Car Model"
@@ -39,6 +41,7 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
             onChange={handleChange}
           />
 
+          <label>Car Price:</label>
           <input
             id="car_price"
             placeholder="Car Price"
@@ -57,6 +60,7 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
         <div id="step3">
           <h2>Payment Details</h2>
 
+          <label>Card Info:</label>
           <input
             id="card_info"
             placeholder="Card Info"
@@ -64,6 +68,7 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
             onChange={handleChange}
           />
 
+          <label>Expiry Date:</label>
           <input
             id="expiry_date"
             placeholder="Expiry Date"
@@ -77,7 +82,6 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
           </div>
         </div>
       )}
-
     </div>
   );
 };
