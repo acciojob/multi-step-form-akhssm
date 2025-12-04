@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }) => {
+
+  useEffect(() => {
+    console.log(step);
+    
+  },[step]);
   return (
     <>
-      {step === 1 && (
         <div id="step1">
+      {step === 1 && (
+        <>
           <h2>Customer Details</h2>
 
           <label>First Name:</label>
@@ -37,11 +43,13 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
               Next
             </button>
           </div>
-        </div>
+          </>
       )}
+      </div>
 
+      <div id="step2">
       {step === 2 && (
-        <div id="step2">
+        <>
           <h2>Car Details</h2>
 
           <label>Car Model:</label>
@@ -72,11 +80,13 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
               Next
             </button>
           </div>
-        </div>
+          </>
       )}
+        </div>
 
-      {step === 3 && (
         <div id="step3">
+      {step === 3 && (
+        <>
           <h2>Payment Details</h2>
 
           <label>Card Info:</label>
@@ -107,8 +117,9 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
               Submit
             </button>
           </div>
-        </div>
+          </>
       )}
+        </div>
     </>
   );
 };
