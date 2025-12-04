@@ -9,7 +9,9 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
 
           <label>First Name:</label>
           <input
+            type="text"
             id="first_name"
+            name="first_name"
             placeholder="First Name"
             value={formData.first_name}
             onChange={handleChange}
@@ -17,14 +19,21 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
 
           <label>Last Name:</label>
           <input
+            type="text"
             id="last_name"
+            name="last_name"
             placeholder="Last Name"
             value={formData.last_name}
             onChange={handleChange}
           />
 
           <div className="button-group">
-            <button type="button" className="nav-btn" onClick={nextStep}>
+            <button
+              type="button"
+              className="nav-btn"
+              onClick={nextStep}
+              id="next-step1"
+            >
               Next
             </button>
           </div>
@@ -37,7 +46,9 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
 
           <label>Car Model:</label>
           <input
+            type="text"
             id="model"
+            name="model"
             placeholder="Car Model"
             value={formData.model}
             onChange={handleChange}
@@ -45,7 +56,9 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
 
           <label>Car Price:</label>
           <input
+            type="text"
             id="car_price"
+            name="car_price"
             placeholder="Car Price"
             value={formData.car_price}
             onChange={handleChange}
@@ -68,7 +81,9 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
 
           <label>Card Info:</label>
           <input
+            type="text"
             id="card_info"
+            name="card_info"
             placeholder="Card Info"
             value={formData.card_info}
             onChange={handleChange}
@@ -76,7 +91,9 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
 
           <label>Expiry Date:</label>
           <input
+            type="text"
             id="expiry_date"
+            name="expiry_date"
             placeholder="Expiry Date"
             value={formData.expiry_date}
             onChange={handleChange}
